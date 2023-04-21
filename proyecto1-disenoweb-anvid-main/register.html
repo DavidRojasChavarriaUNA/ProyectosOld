@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto I</title>
+    <meta name="author" content="Anthony Ramirez Lopez" />
+    <meta name="author" content="David Rojas Chavarria" />
+    <meta name="description" content="Proyecto I - Diseño de sitios web" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/Site.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <!--menu, se asigna el contenedor-->
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+          <!--menu a la izquierda-->
+          <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                  <li class="uk-parent">
+                      <a class="text-menu" href="index.html#bienvenida">
+                          <img src="imagenes/logo.png" class="logo img-responsive" />
+                      </a>
+                  </li>
+                  <li class="uk-parent uk-visible@m"><a class="text-menu" href="index.html#lstClientes">Clientes</a></li>
+                  
+                  <li class="uk-parent uk-visible@m"><a class="text-menu" href="#">Caracteristicas</a></li>
+                  <div class="uk-navbar-dropdown uk-visible@m">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class=""><a href="index.html#lstCaractFuncUsuario">Usuario</a></li>
+                          <li class=""><a href="index.html#lstCaractTenicas">Técnicas</a></li>
+                      </ul>
+                  </div>
+
+                  <li class="uk-parent uk-visible@m"><a class="text-menu" href="index.html#lstFuncAdministradores">Funcionalidades administradores</a></li>
+                  <li class="uk-parent uk-visible@m"><a class="text-menu" href="index.html#srvCliente">Servicio al cliente</a></li>
+                  <li class="uk-parent uk-visible@m"><a class="text-menu" href="index.html#planesPrecios">Planes y precios</a></li>
+              </ul>
+          </div>
+          <!--menu a la derecha-->
+          <div class="uk-navbar-right red-on-hover">
+              <ul class="uk-navbar-nav">
+                  <li class="uk-parent uk-visible@m"><a class="text-menu" href="register.html">Registrarse</a></li>
+                  <li class="uk-parent uk-visible@m"><a class="text-menu" href="login.html">Ingresar</a></li>
+                  <li class="uk-hidden@m">
+                      <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#menu-responsivo" uk-toggle></a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <!-- This is the off-canvas -->
+      <nav id="menu-responsivo" uk-offcanvas class="uk-hidden@m">
+          <div class="uk-offcanvas-bar">
+              <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+                  <li>
+                      <a class="text-menu" href="index.html#bienvenida">
+                          <img src="imagenes/logo.png" class="logo img-responsive" style="margin-left: -5px; margin-top: -13px;" />
+                      </a>
+                  </li>
+                  <li><a class="text-menu" href="index.html#lstClientes">Clientes</a></li>
+                  <li class="uk-parent">
+                      <a href="#"class="text-menu">Caracteristicas</a>
+                      <ul class="uk-nav-sub">
+                          <li class=""><a class="text-menu" href="index.html#lstCaractFuncUsuario">Usuario</a></li>
+                          <li class=""><a class="text-menu" href="index.html#lstCaractTenicas">Técnicas</a></li>
+                      </ul>
+                  </li>
+                  <li><a class="text-menu" href="index.html#lstFuncAdministradores">Funcionalidades administradores</a></li>
+                  <li><a class="text-menu" href="index.html#srvCliente">Servicio al cliente</a></li>
+                  <li><a class="text-menu" href="index.html#planesPrecios">Planes y precios</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="text-menu" href="register.html">Registrarse</a></li>
+                  <li><a class="text-menu" href="login.html">Ingresar</a></li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+    <main class="uk-container">
+      <article
+        id="registro"
+        class="uk-section uk-section-muted uk-flex uk-flex-middle uk-animation-fade"
+        uk-height-viewport="expand: true"
+      >
+        <div class="uk-container">
+          <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+            <div class="uk-width-1-1@m">
+              <div
+                class="uk-margin uk-width-large uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large"
+              >
+                <h3 class="uk-card-title uk-text-center">Bienvenido a bordo!</h3>
+                <form>
+                  <div class="uk-margin">
+                    <div class="uk-inline uk-width-1-1">
+                      <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                      <input class="uk-input uk-form-large" type="text" />
+                    </div>
+                  </div>
+                  <div class="uk-margin">
+                    <div class="uk-inline uk-width-1-1">
+                      <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                      <input class="uk-input uk-form-large" type="password" />
+                    </div>
+                  </div>
+                  <div class="uk-margin">
+                    <button
+                      class="uk-button uk-button-primary uk-button-large uk-width-1-1"
+                    >
+                      Registrar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!--El logo se diseño en este sitio, el sitio solicita inluir este tag-->
+    <div style="display: none">
+      Logo created by
+      <a href="https://www.designevo.com/" title="Free Online Logo Maker"
+        >DesignEvo logo maker</a
+      >
+    </div>
+    <footer id="footer">
+      <div class="uk-text-center">
+        <img src="imagenes/logo.png" class="logo img-responsive" />
+      </div>
+      <!--menu, se asigna el contenedor-->
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li class="uk-parent">
+              <a class="text-menu" href="#planesPrecios">Quienes somos</a>
+            </li>
+            <li class="uk-parent">
+              <a class="text-menu" href="#planesPrecios">Planes y precios</a>
+            </li>
+            <li class="uk-parent">
+              <a class="text-menu" href="#planesPrecios">Contáctenos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <p class="uk-text-center copy-right uk-text-muted">
+        Mi voto es una aplicación desarrollada para el proyecto I, del Curso
+        diseño de sitios web de la UNA - 2022.
+      </p>
+    </footer>
+  </body>
+</html>
